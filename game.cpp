@@ -44,7 +44,7 @@ string Staff::getDescription() const {
 int Staff::getAttack() const {
     string des = character->getDescription();
     if (des.compare(0, 6, "Wizard") == 0) {
-        return character->getAttack() + 60;
+        return character->getAttack() + 20;
     }
     return character->getAttack() + 20;
 }
@@ -61,7 +61,7 @@ string Sword::getDescription() const {
 int Sword::getAttack() const {
     string des = character->getDescription();
     if (des.compare(0, 6, "Knight") == 0) {
-        return character->getAttack() + 70;
+        return character->getAttack() + 30;
     }
     return character->getAttack() + 30;
 }
@@ -78,7 +78,7 @@ string Bow::getDescription() const {
 int Bow::getAttack() const {
     string desc = character->getDescription();
     if (desc.compare(0, 6, "Archer") == 0) {
-        return character->getAttack() + 65;
+        return character->getAttack() + 25;
     }
     return character->getAttack() + 25;
 }
